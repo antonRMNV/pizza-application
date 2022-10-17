@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #FAFAFA;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.app.SignUpController">
+    <children>
+        <TextField fx:id="signUpLogin" layoutX="37.0" layoutY="205.0" prefHeight="33.0" prefWidth="202.0" promptText="Логін" style="-fx-border-color: silver; -fx-border-radius: 15; -fx-background-color: #FAFAFA;">
+            <font>
+                <Font name="Trebuchet MS" size="17.0" />
+            </font>
+        </TextField>
+        <ImageView fitHeight="63.0" fitWidth="125.0" layoutX="20.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../assets/logo.png" />
+            </image>
+        </ImageView>
+        <PasswordField fx:id="signUpPassword" layoutX="253.0" layoutY="205.0" prefHeight="34.0" prefWidth="202.0" promptText="Пароль" style="-fx-background-color: #FAFAFA; -fx-border-color: silver; -fx-border-radius: 15;">
+            <font>
+                <Font name="Trebuchet MS" size="17.0" />
+            </font>
+        </PasswordField>
+        <Button fx:id="signUpBtn" layoutX="144.0" layoutY="270.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="202.0" style="-fx-background-color: f1c60d; -fx-background-radius: 30;" text="Зареєструватись" textFill="#262214">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Button>
+        <Text layoutX="164.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Реєстрація">
+            <font>
+                <Font name="Trebuchet MS Bold" size="31.0" />
+            </font>
+        </Text>
+      <Button fx:id="goBackBtn" layoutX="13.0" layoutY="12.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="29.0" style="-fx-background-color: fafafa;">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="signUpName" layoutX="37.0" layoutY="128.0" prefHeight="33.0" prefWidth="202.0" promptText="Ім‘я" style="-fx-border-color: silver; -fx-border-radius: 15; -fx-background-color: #FAFAFA;">
+         <font>
+            <Font name="Trebuchet MS" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="signUpSurname" layoutX="253.0" layoutY="128.0" prefHeight="33.0" prefWidth="202.0" promptText="Прізвище" style="-fx-border-color: silver; -fx-border-radius: 15; -fx-background-color: #FAFAFA;">
+         <font>
+            <Font name="Trebuchet MS" size="17.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="422.0" fitWidth="215.0" layoutX="485.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/pizzaSignUp.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="signUpPhone" layoutX="37.0" layoutY="167.0" prefHeight="33.0" prefWidth="202.0" promptText="Номер телефону" style="-fx-border-color: silver; -fx-border-radius: 15; -fx-background-color: #FAFAFA;">
+         <font>
+            <Font name="Trebuchet MS" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="signUpCity" layoutX="253.0" layoutY="167.0" prefHeight="33.0" prefWidth="202.0" promptText="Місто" style="-fx-border-color: silver; -fx-border-radius: 15; -fx-background-color: #FAFAFA;">
+         <font>
+            <Font name="Trebuchet MS" size="17.0" />
+         </font>
+      </TextField>
+      <Text fx:id="successfulRegText" layoutX="115.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Акаунт успішно зареєстровано! Поверніться на головну сторінку" textAlignment="CENTER" wrappingWidth="276.9578552246094">
+         <font>
+            <Font name="Trebuchet MS Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="emptyFieldsText" fill="#cc0e0e" layoutX="154.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Незаповнено деякі поля!" textAlignment="CENTER" wrappingWidth="183.04833984375">
+         <font>
+            <Font name="Trebuchet MS Bold" size="12.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

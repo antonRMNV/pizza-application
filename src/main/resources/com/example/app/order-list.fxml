@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #FAFAFA;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.app.OrderListController">
+    <children>
+        <ImageView fitHeight="51.0" fitWidth="101.0" layoutX="585.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../assets/logo.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="218.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ваше замовлення" wrappingWidth="263.8649597167969">
+            <font>
+                <Font name="Trebuchet MS Bold" size="29.0" />
+            </font>
+        </Text>
+        <Text layoutX="51.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Повернутися до меню" wrappingWidth="195.864990234375">
+            <font>
+                <Font name="Trebuchet MS" size="15.0" />
+            </font>
+        </Text>
+        <Button fx:id="goBackBtn" layoutX="5.0" layoutY="6.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: fafafa;">
+            <graphic>
+                <ImageView fitHeight="33.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="completeOrderBtn" layoutX="444.0" layoutY="324.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="187.0" style="-fx-background-color: fafafa;">
+         <graphic>
+                <ImageView fitHeight="76.0" fitWidth="226.0">
+                    <image>
+                        <Image url="@../../../assets/completeOrder.png" />
+                    </image>
+                </ImageView>
+         </graphic>
+        </Button>
+      <AnchorPane layoutX="36.0" layoutY="100.0" prefHeight="200.0" prefWidth="612.0">
+         <children>
+            <ImageView fitHeight="224.0" fitWidth="627.0">
+               <image>
+                  <Image url="@../../../assets/orderList.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="orderListTxt" layoutX="27.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="578.2649536132812">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="sumOfOrderTxt" layoutX="473.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сума" wrappingWidth="153.4649658203125">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="discountTxt" layoutX="464.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Знижка       -10%" wrappingWidth="153.4649658203125">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="incorrectPromocodeTxt" fill="#c10909" layoutX="66.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Невірний промокод!" wrappingWidth="153.4649658203125">
+               <font>
+                  <Font name="Trebuchet MS" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="deletePizzaInOrderListBtn" layoutX="13.0" layoutY="348.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: fafafa;">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="numberWantToDelete" layoutX="59.0" layoutY="350.0" prefHeight="33.0" prefWidth="202.0" promptText="Номер позиції" style="-fx-border-color: silver; -fx-border-radius: 15; -fx-background-color: #FAFAFA;">
+         <font>
+            <Font name="Trebuchet MS" size="17.0" />
+         </font>
+      </TextField>
+      <Button fx:id="approveRemoveBtn" layoutX="272.0" layoutY="348.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: fafafa;">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/correct.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="undoRemoveBtn" layoutX="318.0" layoutY="348.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: fafafa;">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/remove.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="promocodeBtn" layoutX="59.0" layoutY="348.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: fafafa;">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/promocode.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="promocodeField" layoutX="105.0" layoutY="349.0" prefHeight="34.0" prefWidth="234.0" promptText="Промокод для знижки 10%" style="-fx-border-color: silver; -fx-border-radius: 15; -fx-background-color: #FAFAFA;">
+         <font>
+            <Font name="Trebuchet MS" size="17.0" />
+         </font>
+      </TextField>
+      <Button fx:id="approvePromocodeBtn" layoutX="350.0" layoutY="348.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: fafafa;">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/correct.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="undoPromocodeBtn" layoutX="396.0" layoutY="348.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: fafafa;">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/remove.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="adressField" layoutX="105.0" layoutY="349.0" prefHeight="34.0" prefWidth="339.0" promptText="Адреса для доставки замовлення" style="-fx-border-color: silver; -fx-border-radius: 15; -fx-background-color: #FAFAFA;">
+         <font>
+            <Font name="Trebuchet MS" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="adressFieldEmpty" layoutX="106.0" layoutY="349.0" prefHeight="34.0" prefWidth="339.0" promptText="Адреса для доставки замовлення" style="-fx-border-color: D70E0E; -fx-border-radius: 15; -fx-background-color: #FAFAFA;">
+         <font>
+            <Font name="Trebuchet MS" size="17.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>
